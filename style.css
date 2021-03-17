@@ -50,6 +50,8 @@ h3 {
 
 .background-first {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .background-first::before {
@@ -68,6 +70,10 @@ h3 {
     opacity: 90%;
 
     content: '';
+}
+
+.section-header {
+    position: relative;
 }
 
 .picture-first {
