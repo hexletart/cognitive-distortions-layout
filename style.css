@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Neucha';
+    src: url('fonts/Neucha-Regular.ttf');
+  }
+
 :root {
     --White: #fff;
     --TranslucentWhite: #d7ccc0;
@@ -8,6 +13,7 @@
     --TranslucentDark: #908d8b;
     --Brown: #b09a81;
     --Blue: #1085c5;
+    --substrate: url(images/background.png);
 }
 
 html {
@@ -18,7 +24,8 @@ html {
 h1,
 h2,
 h3 {
-    font-family: Neucha, inherit;
+    font-family: 'Neucha', sans-serif;
+    font-weight: normal;
     line-height: 1.2em;
 }
 
@@ -36,7 +43,37 @@ h3 {
 
 [class^="section"] {
     width: 1110px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     text-align: center;
+}
+
+.background-first {
+    position: relative;
+}
+
+.background-first::before {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: var(--substrate);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: 90%;
+
+    content: '';
+}
+
+.picture-first {
+    position: absolute;
+
+    height: 525px;
+    top: 55px;
+    right: -270px;
 }
