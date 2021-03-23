@@ -27,11 +27,14 @@ html {
 }
 
 body {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
+
+    align-items: center;
     justify-content: center;
+    
+    width: 100%;
+    height: 100%;
 }
 
 h1,
@@ -55,20 +58,25 @@ h3 {
 }
 
 [class$="section"] {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
     width: 1110px;
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-.first-background {
-    position: relative;
+.bg-1 {
     display: flex;
     justify-content: center;
-
     width: 100%;
+    position: relative;
 }
 
-.first-background::before {
+.bg-1::before {
     position: absolute;
 
     width: 100%;
@@ -100,6 +108,22 @@ h3 {
     right: -270px;
 
     z-index: 100;
+}
+
+.first-title {
+    position: relative;
+
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 0;
+    
+    text-align: left;
+
+    z-index: 200;
+}
+
+.primary-color {
+    color: var(--Primary);
 }
 
 .first-description {
@@ -137,12 +161,33 @@ h3 {
     background-color: var(--Primary);
 }
 
-.first-title {
-    position: relative;
-    margin-top: 8px;
-    z-index: 200;
+.second-title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-.primary-color {
-    color: var(--Primary);
+.second-addition {
+    position: relative;
+
+    display: inline-block;
+
+    margin: 27px 0 480px 0;
+    padding-bottom: 30px;
+
+    width: 100%;
+    text-align: center;    
+}
+
+.video {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: -569px;
+
+    padding: 0;
+    margin: 0 auto;
+
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
