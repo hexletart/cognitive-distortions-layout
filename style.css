@@ -1,3 +1,5 @@
+/*Rules*/
+
 @font-face {
     font-family: 'Neucha';
     src: url('fonts/Neucha-Regular.ttf');
@@ -21,18 +23,34 @@
     --Substrate: url(images/background.png);
 }
 
+/*
+General
+bg - background
+clr - color
+col - column
+row
+descr - description
+title
+sect - section
+pict - picture
+vid - video
+link
+numb - number
+*/
+
 html {
     color: #2A2626;
     font: 16px/1.6 'Open Sans', sans-serif;
 }
 
-body {
+body>header,
+main {
     display: flex;
     flex-direction: column;
 
     align-items: center;
     justify-content: center;
-    
+
     width: 100%;
     height: 100%;
 }
@@ -57,7 +75,15 @@ h3 {
     font-size: 34px;
 }
 
-[class$="section"] {
+.primary-color {
+    color: var(--Primary);
+}
+
+.white-color {
+    color: var(--White);
+}
+
+[class$="sect"] {
     display: flex;
     flex-direction: column;
 
@@ -69,14 +95,17 @@ h3 {
     padding-bottom: 100px;
 }
 
-.bg-1 {
+[class$="bg"] {
+    position: relative;
+
     display: flex;
     justify-content: center;
     width: 100%;
-    position: relative;
 }
 
-.bg-1::before {
+/*First section*/
+
+.first-bg::before {
     position: absolute;
 
     width: 100%;
@@ -96,11 +125,11 @@ h3 {
     content: '';
 }
 
-.first-section {
+.first-sect {
     position: relative;
 }
 
-.first-picture {
+.first-sect-pict {
     position: absolute;
 
     height: 525px;
@@ -110,23 +139,19 @@ h3 {
     z-index: 100;
 }
 
-.first-title {
+.first-sect-title {
     position: relative;
 
     width: 100%;
     margin-top: 8px;
     margin-bottom: 0;
-    
+
     text-align: left;
 
     z-index: 200;
 }
 
-.primary-color {
-    color: var(--Primary);
-}
-
-.first-description {
+.first-sect-descr {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -139,17 +164,17 @@ h3 {
     column-gap: 30px;
 }
 
-.first-description div {
+.first-sect-descr div {
     display: block;
     width: 50%;
     text-align: left;
 }
 
-.first-description div p {
+.first-sect-descr div p {
     margin-bottom: 0;
 }
 
-.first-link {
+.first-sect-link {
     display: inline-block;
 
     margin-top: 40px;
@@ -161,25 +186,27 @@ h3 {
     background-color: var(--Primary);
 }
 
-.second-title {
+/*Second section*/
+
+.second-sect-title {
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.second-addition {
+.second-sect-descr {
     position: relative;
 
     display: inline-block;
 
-    margin: 27px 0 480px 0;
+    margin: 25px 0 382px 0;
     padding-bottom: 30px;
 
     width: 100%;
-    text-align: center;    
+    text-align: center;
 }
 
-.video {
+.second-sect-vid {
     position: absolute;
 
     left: 0;
@@ -190,4 +217,90 @@ h3 {
     margin: 0 auto;
 
     filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+/*Third section*/
+
+.third-bg::before {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    background-color: var(--MainDark);
+
+    content: '';
+
+    z-index: -100;
+}
+
+.third-sect {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 200px;
+}
+
+.third-sect-title {
+    position: relative;
+
+    font-size: 52px;
+    margin: 0;
+
+    z-index: 0
+}
+
+[class^="third-sect-row"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: inherit;
+    margin-bottom: 20px;
+}
+
+[class^="third-sect-row"]:nth-child(2) {
+    margin-bottom: 0;
+}
+
+[class^="third-sect-card-n"] {
+    width: 350px;
+    box-sizing: border-box;
+
+    margin-right: auto;
+    padding: 24px;
+
+    background-color: var(--Light);
+}
+
+.third-sect-card-n {
+    padding: 0;
+    
+    background-color: transparent;
+}
+
+[class^="third-sect-card-n"]:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.third-sect-numb {
+    margin: 0 0 40px 0;
+
+    font-size: 64px;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.third-sect-card-title {
+    margin: 0;
+}
+
+[class^="third-sect-card-descr"] {
+    margin-bottom: 0;
 }
