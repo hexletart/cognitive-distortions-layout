@@ -15,6 +15,7 @@
     --TranslucentWhite: #d7ccc0;
     --Light: #f5f4f0;
     --Primary: #fe8a02;
+    --PrimaryDark: #EA7600;
     --MainDark: #42413c;
     --Dark: #2a2626;
     --TranslucentDark: #908d8b;
@@ -186,6 +187,10 @@ h3 {
     background-color: var(--Primary);
 }
 
+.first-sect-link:hover {
+    background-color: var(--PrimaryDark);
+}
+
 /*Second section*/
 
 .second-sect-title {
@@ -300,10 +305,10 @@ h3 {
 }
 
 .third-sect-link:hover,
-.third-sect-link:hover h3 { 
+.third-sect-link:hover h3 {
     color: var(--White);
     background-color: var(--Primary);
-    
+
 }
 
 .third-sect-numb {
@@ -321,3 +326,4 @@ h3 {
 [class^="third-sect-card-descr"] {
     margin-bottom: 0;
 }
+
