@@ -270,6 +270,8 @@ h3 {
 }
 
 [class^="third-sect-card-n"] {
+    display: block;
+
     width: 350px;
     box-sizing: border-box;
 
@@ -279,14 +281,29 @@ h3 {
     background-color: var(--Light);
 }
 
-.third-sect-card-n {
-    padding: 0;
-    
-    background-color: transparent;
+.third-sect-card-title {
+    color: var(--Primary);
 }
 
 [class^="third-sect-card-n"]:nth-child(3n+3) {
     margin-right: 0;
+}
+
+.third-sect-card-n {
+    padding: 0;
+    background-color: transparent;
+}
+
+.third-sect-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.third-sect-link:hover,
+.third-sect-link:hover h3 { 
+    color: var(--White);
+    background-color: var(--Primary);
+    
 }
 
 .third-sect-numb {
