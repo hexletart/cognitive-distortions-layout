@@ -37,6 +37,7 @@ pict - picture
 vid - video
 link
 numb - number
+opt - option
 */
 
 html {
@@ -86,10 +87,6 @@ h3 {
 
 [class$="sect"] {
     display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
 
     width: 1110px;
     padding-top: 100px;
@@ -104,9 +101,7 @@ h3 {
     width: 100%;
 }
 
-/*First section*/
-
-.first-bg::before {
+.opt-1-bg::before {
     position: absolute;
 
     width: 100%;
@@ -126,8 +121,33 @@ h3 {
     content: '';
 }
 
+.opt-2-bg::before {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    background-color: var(--MainDark);
+
+    content: '';
+
+    z-index: -100;
+}
+
+/*First section*/
+
 .first-sect {
     position: relative;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
 }
 
 .first-sect-pict {
@@ -193,6 +213,13 @@ h3 {
 
 /*Second section*/
 
+.second-sect {
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
 .second-sect-title {
     margin: 0;
     padding: 0;
@@ -226,28 +253,13 @@ h3 {
 
 /*Third section*/
 
-.third-bg::before {
-    position: absolute;
-
-    width: 100%;
-    height: 100%;
-
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-
-    background-color: var(--MainDark);
-
-    content: '';
-
-    z-index: -100;
-}
-
 .third-sect {
     position: relative;
-    display: flex;
+
     flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
 
     padding-top: 200px;
 }
@@ -327,3 +339,93 @@ h3 {
     margin-bottom: 0;
 }
 
+/*Fourth section*/
+
+.fourth-sect {
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.fourth-sect-row-1 {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+
+    column-gap: 30px;
+}
+
+.fourth-sect-col-1 {
+    position: relative;
+}
+
+.fourth-sect-pict {
+    vertical-align: middle;
+
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+    z-index: 300;
+}
+
+.fourth-sect-descr-1 {
+    margin: 0;
+
+    font-size: 24px;
+    font-family: 'Neucha', sans-serif;
+    font-weight: normal;
+
+    color: var(--TranslucentDark);
+}
+
+.fourth-sect-title-1 {
+    margin: 0;
+}
+
+.fourth-sect-descr-2 {
+    margin: 30px 0 0;
+    font: 34px/1.2 'Neucha', sans-serif;
+    font-weight: normal;
+}
+
+.fourth-sect-title-2 {
+    display: block;
+
+    width: inherit;
+    box-sizing: border-box;
+
+    margin: 100px 0 20px;
+    padding: 5px 0 5px 10px;
+
+    color: var(--White);
+    background-color: var(--Brown);
+
+    text-align: left;
+
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+
+.fourth-sect-row-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 100%;
+
+    column-gap: 30px;
+}
+
+.fourth-sect-row-2 div {
+    display: block;
+
+    width: 50%;
+
+    text-align: left;
+}
+
+.fourth-sect-row-2 div p {
+    margin: 0;
+}
