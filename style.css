@@ -130,6 +130,8 @@ h3 {
     opacity: 10%;
 
     content: '';
+
+    z-index: 100;
 }
 
 .opt-2-bg::before {
@@ -149,7 +151,25 @@ h3 {
 
     content: '';
 
-    z-index: -100;
+    z-index: 200;
+}
+
+.opt-3-bg::after {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    background-color: var(--Brown);
+
+    content: '';
+
+    z-index: 300;
 }
 
 .opt-3-bg::before {
@@ -169,26 +189,8 @@ h3 {
 
     content: '';
 
-    z-index: 500;
-
     opacity: 10%;
-}
-
-.opt-3-bg::after {
-    position: absolute;
-
-    width: 100%;
-    height: 100%;
-
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-
-    background-color: var(--Brown);
-
-    content: '';
-
+    
     z-index: 400;
 }
 
@@ -279,7 +281,7 @@ h3 {
     top: 55px;
     right: -270px;
 
-    z-index: 100;
+    z-index: 500;
 }
 
 .first-sect-clr-title {
@@ -291,7 +293,7 @@ h3 {
 
     text-align: left;
 
-    z-index: 200;
+    z-index: 600;
 }
 
 .first-sect-row-2 {
@@ -332,6 +334,8 @@ h3 {
 
     width: 100%;
     text-align: center;
+
+    z-index: 700;
 }
 
 .second-sect-vid {
@@ -351,6 +355,8 @@ h3 {
 
 .third-sect {
     padding-top: 200px;
+
+    z-index: 800;
 }
 
 .third-sect-clr-title {
@@ -358,8 +364,6 @@ h3 {
 
     font-size: 52px;
     margin: 0;
-
-    z-index: 0
 }
 
 [class^="third-sect-opt"] {
@@ -428,23 +432,23 @@ h3 {
 /*Fourth section*/
 
 .fourth-sect {
-    z-index: 300;
+    z-index: 900;
 }
 
 /*Fifth section*/
 
 .fifth-sect {
-    z-index: 600;
+    z-index: 1000;
 }
 
 /*Sixth section*/
 
 .sixth-sect {
-    z-index: 700;
+    z-index: 1100;
 }
 
 /*Seven section*/
 
 .seventh-sect {
-    z-index: 800;
+    z-index: 1200;
 }
