@@ -214,9 +214,15 @@ h3 {
     margin: 0;
 }
 
+[class$="sect-pict"] {
+    vertical-align: middle;
+
+    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
 /*First section*/
 
-.first-sect-pict {
+.first-sect-main-pict {
     position: absolute;
 
     height: 525px;
@@ -226,7 +232,7 @@ h3 {
     z-index: 100;
 }
 
-.first-sect-title {
+.first-sect-clr-title {
     position: relative;
 
     width: 100%;
@@ -238,30 +244,11 @@ h3 {
     z-index: 200;
 }
 
-.first-sect-descr {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-
-    width: 100%;
-
+.first-sect-row-2 {
     margin-top: 177px;
-
-    column-gap: 30px;
 }
 
-.first-sect-descr div {
-    display: block;
-    width: 50%;
-    text-align: left;
-}
-
-.first-sect-descr div p {
-    margin-bottom: 0;
-}
-
-.first-sect-link {
+.first-sect-main-link {
     display: inline-block;
 
     margin-top: 40px;
@@ -273,13 +260,13 @@ h3 {
     background-color: var(--Primary);
 }
 
-.first-sect-link:hover {
+.first-sect-main-link:hover {
     background-color: var(--PrimaryDark);
 }
 
 /*Second section*/
 
-.second-sect-title {
+.second-sect-clr-title {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -316,7 +303,7 @@ h3 {
     padding-top: 200px;
 }
 
-.third-sect-title {
+.third-sect-clr-title {
     position: relative;
 
     font-size: 52px;
@@ -397,12 +384,6 @@ h3 {
     z-index: 300;
 }
 
-.fourth-sect-pict {
-    vertical-align: middle;
-
-    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-}
-
 .fourth-sect-descr-1 {
     margin: 0;
 
@@ -472,12 +453,6 @@ h3 {
     color: var(--White);
 }
 
-.fifth-sect-pict {
-    vertical-align: middle;
-
-    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
-}
-
 .fifth-sect-title-2 {
     display: block;
 
@@ -501,12 +476,6 @@ h3 {
 
 .sixth-sect {
     z-index: 700;
-}
-
-.sixth-sect-pict {
-    vertical-align: middle;
-
-    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 .sixth-sect-descr-1 {
@@ -576,12 +545,6 @@ h3 {
     font-weight: normal;
 
     color: var(--White);
-}
-
-.seventh-sect-pict {
-    vertical-align: middle;
-
-    filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 .seventh-sect-title-2 {
