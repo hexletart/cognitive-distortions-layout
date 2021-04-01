@@ -389,6 +389,7 @@ h3 {
 
 .third-sect-card-title {
     color: var(--Primary);
+    margin: 0;
 }
 
 [class^="third-sect-card-n"]:nth-child(3n+3) {
@@ -418,10 +419,6 @@ h3 {
     font-size: 64px;
     font-weight: normal;
     line-height: 1;
-}
-
-.third-sect-card-title {
-    margin: 0;
 }
 
 [class^="third-sect-card-descr"] {
