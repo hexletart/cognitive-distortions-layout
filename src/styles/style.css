@@ -46,6 +46,10 @@ html {
     font: 16px/1.6 'Open Sans', sans-serif;
 }
 
+body {
+    margin: 0;
+}
+
 header,
 main,
 footer {
