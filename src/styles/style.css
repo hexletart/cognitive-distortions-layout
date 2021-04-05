@@ -344,11 +344,13 @@ h3 {
 
     display: inline-block;
 
-    margin: 25px 0 382px 0;
+    margin-bottom: 385px;
     padding-bottom: 30px;
 
     width: 100%;
     text-align: center;
+
+    font: 16px/1.6 'Open Sans', sans-serif;
 
     z-index: 700;
 }
