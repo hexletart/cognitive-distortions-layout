@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'Neucha';
-    src: url('fonts/Neucha-Regular.ttf');
+    src: url('../assets/fonts/Neucha-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Open Sans';
-    src: url('fonts/OpenSans-Regular.ttf');
+    src: url('../assets/fonts/OpenSans-Regular.ttf');
 }
 
 :root {
@@ -21,7 +21,7 @@
     --TranslucentDark: #908d8b;
     --Brown: #b09a81;
     --Blue: #1085c5;
-    --Substrate: url(images/background.png);
+    --Substrate: url(../assets/images/background.png);
 }
 
 /*
@@ -325,6 +325,7 @@ h3 {
 
 .first-sect-main-link:hover {
     background-color: var(--PrimaryDark);
+    cursor: pointer;
 }
 
 /*Second section*/
@@ -559,6 +560,7 @@ h3 {
 
 .footer-button:hover {
     background-color: var(--PrimaryDark);
+    cursor: pointer;
 }
 
 .footer-rules {
