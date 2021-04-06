@@ -67,7 +67,7 @@ h1,
 h2,
 h3 {
     margin: 0;
-    
+
     font-family: 'Neucha', sans-serif;
     font-weight: normal;
     line-height: 1.2em;
@@ -259,7 +259,7 @@ h3 {
     justify-content: flex-start;
 }
 
- [class$="sect-descr-1"] {
+[class$="sect-descr-1"] {
     margin: 0;
 
     font-size: 24px;
