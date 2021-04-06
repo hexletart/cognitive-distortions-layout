@@ -245,6 +245,8 @@ h3 {
 [class$="sect-col-txt"] {
     display: flex;
 
+    margin-top: -5px;
+
     flex-direction: column;
     justify-content: flex-start;
 }
