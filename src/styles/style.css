@@ -128,6 +128,24 @@ h3 {
     right: 0;
     margin: 0 auto;
 
+    background-color: var(--Light);
+
+    content: '';
+
+    z-index: 100;
+}
+
+.opt-1-bg::after {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
     background-image: var(--Substrate);
     background-repeat: no-repeat;
     background-size: cover;
@@ -136,7 +154,7 @@ h3 {
 
     content: '';
 
-    z-index: 100;
+    z-index: 200;
 }
 
 .opt-2-bg::before {
@@ -154,10 +172,10 @@ h3 {
 
     content: '';
 
-    z-index: 200;
+    z-index: 300;
 }
 
-.opt-3-bg::after {
+.opt-3-bg::before {
     position: absolute;
 
     width: 100%;
@@ -172,10 +190,10 @@ h3 {
 
     content: '';
 
-    z-index: 300;
+    z-index: 400;
 }
 
-.opt-3-bg::before {
+.opt-3-bg::after {
     position: absolute;
 
     width: 100%;
@@ -194,7 +212,7 @@ h3 {
 
     opacity: 10%;
 
-    z-index: 400;
+    z-index: 500;
 }
 
 [class$="sect"] {
@@ -223,13 +241,22 @@ h3 {
     column-gap: 30px;
 }
 
-[class$="sect-descr-1"] {
+
+[class$="sect-col-txt"] {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+ [class$="sect-descr-1"] {
     margin: 0;
 
     font-size: 24px;
     font-family: 'Neucha', sans-serif;
     font-weight: normal;
 }
+
 
 [class$="sect-title-1"] {
     margin: 0;
@@ -288,7 +315,7 @@ h3 {
     top: 55px;
     right: -270px;
 
-    z-index: 500;
+    z-index: 600;
 }
 
 .first-sect-clr-title {
@@ -299,7 +326,7 @@ h3 {
 
     text-align: left;
 
-    z-index: 600;
+    z-index: 700;
 }
 
 .first-sect-row-2-opt-1 {
@@ -350,7 +377,7 @@ h3 {
 
     font: 16px/1.6 'Open Sans', sans-serif;
 
-    z-index: 700;
+    z-index: 900;
 }
 
 .second-sect-vid {
@@ -371,7 +398,7 @@ h3 {
 .third-sect {
     padding-top: 200px;
 
-    z-index: 900;
+    z-index: 1000;
 }
 
 .third-sect-clr-title {
@@ -447,23 +474,23 @@ h3 {
 /*Fourth-eighth section*/
 
 .fourth-sect {
-    z-index: 1000;
-}
-
-.fifth-sect {
     z-index: 1100;
 }
 
-.sixth-sect {
+.fifth-sect {
     z-index: 1200;
 }
 
-.seventh-sect {
+.sixth-sect {
     z-index: 1300;
 }
 
-.eighth-sect {
+.seventh-sect {
     z-index: 1400;
+}
+
+.eighth-sect {
+    z-index: 1500;
 }
 
 .eighth-ind-1 {
