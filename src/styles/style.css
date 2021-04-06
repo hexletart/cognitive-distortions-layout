@@ -77,10 +77,15 @@ h1 {
 
 h2 {
     font-size: 60px;
+    color: var(--Primary)
 }
 
 h3 {
     font-size: 34px;
+}
+
+.black-color {
+    color: var(--Dark);
 }
 
 .primary-color {
@@ -436,7 +441,7 @@ h3 {
 }
 
 .third-sect-card-title {
-    color: var(--Primary);
+    font-size: 34px;
     margin: 0;
 }
 
@@ -465,6 +470,7 @@ h3 {
     margin: 0 0 40px 0;
 
     font-size: 64px;
+    font-family: 'Neucha', sans-serif;
     font-weight: normal;
     line-height: 1;
 }
