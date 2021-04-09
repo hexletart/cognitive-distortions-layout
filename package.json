@@ -1,7 +1,7 @@
 {
   "name": "layout-designer-project-lvl1",
   "type": "module",
- "version": "1.0.0",
+  "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/hexletart/layout-designer-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/hexletart/layout-designer-project-lvl1/actions)",
   "main": "index.js",
   "scripts": {
@@ -16,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/hexletart/layout-designer-project-lvl1/issues"
   },
-  "homepage": "https://github.com/hexletart/layout-designer-project-lvl1#readme"
+  "homepage": "https://github.com/hexletart/layout-designer-project-lvl1#readme",
+  "dependencies": {
+    "html5-css-boilerplate": "git+https://github.com/hexletart/html-boilerplate.git",
+    "stylelint": "^13.12.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-order": "^4.1.0"
+  },
+  "devDependencies": {
+    "html-boilerplate": "^1.0.1"
+  }
 }
