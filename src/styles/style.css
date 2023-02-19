@@ -463,11 +463,12 @@ h3 {
   text-decoration: none;
 }
 
-.third-sect-link:hover,
-.third-sect-link:hover h3 {
-  color: var(--White);
-
+.third-sect-link:hover {
   background-color: var(--Primary);
+}
+
+.third-sect-link:hover h2 {
+  color: var(--White);
 }
 
 .third-sect-numb {
