@@ -20,7 +20,7 @@
   "dependencies": {
     "html5-css-boilerplate": "git+https://github.com/hexletart/html-boilerplate.git",
     "stylelint": "^13.12.0",
-    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-rational-order": "^0.0.4",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-order": "^4.1.0"
   },
