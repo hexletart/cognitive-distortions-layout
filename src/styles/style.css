@@ -1,27 +1,27 @@
 /* Rules */
 
 @font-face {
-  font-family: 'Neucha';
-  src: url('../assets/fonts/Neucha-Regular.ttf');
+  font-family: '"Neucha';
+  src: url("../assets/fonts/Neucha-Regular.ttf");
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: url('../assets/fonts/OpenSans-Regular.ttf');
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Regular.ttf");
 }
 
 :root {
-  --White: #fff;
-  --TranslucentWhite: #d7ccc0;
-  --Light: #f5f4f0;
-  --Primary: #fe8a02;
-  --PrimaryDark: #ea7600;
-  --MainDark: #42413c;
-  --Dark: #2a2626;
-  --TranslucentDark: #908d8b;
-  --Brown: #b09a81;
-  --Blue: #1085c5;
-  --Substrate: url(../assets/images/background.png);
+  --white: #fff;
+  --translucent-white: #d7ccc0;
+  --light: #f5f4f0;
+  --primary: #fe8a02;
+  --primary-dark: #ea7600;
+  --main-dark: #42413c;
+  --dark: #2a2626;
+  --translucent-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+  --substrate: url("../assets/images/background.png");
 }
 
 /*
@@ -43,7 +43,7 @@ ind - indent
 
 html {
   color: #2a2626;
-  font: 16px/1.6 'Open Sans', sans-serif;
+  font: 16px/1.6 "Open Sans", sans-serif;
 }
 
 body {
@@ -68,10 +68,10 @@ h2,
 h3 {
   margin: 0;
 
-  color: var(--Primary);
+  color: var(--primary);
   font-weight: normal;
 
-  font-family: 'Neucha', sans-serif;
+  font-family: '"Neucha', sans-serif;
   line-height: 1.2em;
 }
 
@@ -88,35 +88,35 @@ h3 {
 }
 
 .black-color {
-  color: var(--Dark);
+  color: var(--dark);
 }
 
 .primary-color {
-  color: var(--Primary);
+  color: var(--primary);
 }
 
 .white-color {
-  color: var(--White);
+  color: var(--white);
 }
 
-.translucentDark-color {
-  color: var(--TranslucentDark);
+.translucent-dark-color {
+  color: var(--translucent-dark);
 }
 
-.translucentWhite-color {
-  color: var(--TranslucentWhite);
+.translucent-white-color {
+  color: var(--translucent-white);
 }
 
 .title-color-var-1 {
-  color: var(--White);
+  color: var(--white);
 
-  background-color: var(--Brown);
+  background-color: var(--brown);
 }
 
 .title-color-var-2 {
-  color: var(--Brown);
+  color: var(--brown);
 
-  background-color: var(--White);
+  background-color: var(--white);
 }
 
 [class$="bg"] {
@@ -140,9 +140,9 @@ h3 {
   height: 100%;
   margin: 0 auto;
 
-  background-color: var(--Light);
+  background-color: var(--light);
 
-  content: '';
+  content: "";
 }
 
 .opt-1-bg::after {
@@ -158,13 +158,13 @@ h3 {
   height: 100%;
   margin: 0 auto;
 
-  background-image: var(--Substrate);
+  background-image: var(--substrate);
   background-repeat: no-repeat;
   background-size: cover;
 
-  opacity: 10%;
+  opacity: 0.1;
 
-  content: '';
+  content: "";
 }
 
 .opt-2-bg::before {
@@ -180,9 +180,9 @@ h3 {
   height: 100%;
   margin: 0 auto;
 
-  background-color: var(--MainDark);
+  background-color: var(--main-dark);
 
-  content: '';
+  content: "";
 }
 
 .opt-3-bg::before {
@@ -198,9 +198,9 @@ h3 {
   height: 100%;
   margin: 0 auto;
 
-  background-color: var(--Brown);
+  background-color: var(--brown);
 
-  content: '';
+  content: "";
 }
 
 .opt-3-bg::after {
@@ -216,13 +216,13 @@ h3 {
   height: 100%;
   margin: 0 auto;
 
-  background-image: var(--Substrate);
+  background-image: var(--substrate);
   background-repeat: no-repeat;
   background-size: cover;
 
-  opacity: 10%;
+  opacity: 0.1;
 
-  content: '';
+  content: "";
 }
 
 [class$="sect"] {
@@ -266,20 +266,20 @@ h3 {
   font-weight: normal;
 
   font-size: 24px;
-  font-family: 'Neucha', sans-serif;
+  font-family: '"Neucha', sans-serif;
 }
 
 [class$="sect-descr-2"] {
   margin: 30px 0 0;
 
-  font: 34px/1.2 'Neucha', sans-serif;
+  font: 34px/1.2 '"Neucha', sans-serif;
   font-weight: normal;
 }
 
 [class$="sect-pict"] {
   vertical-align: middle;
 
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
 
 [class$="sect-title-2"] {
@@ -294,7 +294,7 @@ h3 {
   font-weight: normal;
 
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 
   text-align: left;
 }
@@ -353,15 +353,15 @@ h3 {
 
   overflow: visible;
 
-  color: var(--White);
+  color: var(--white);
   font-weight: bold;
   text-decoration: none;
 
-  background-color: var(--Primary);
+  background-color: var(--primary);
 }
 
 .first-sect-main-link:hover {
-  background-color: var(--PrimaryDark);
+  background-color: var(--primary-dark);
   cursor: pointer;
 }
 
@@ -386,7 +386,7 @@ h3 {
   margin: 30px 0 390px;
   padding-bottom: 30px;
 
-  font: 16px/1.6 'Open Sans', sans-serif;
+  font: 16px/1.6 "Open Sans", sans-serif;
   text-align: center;
 }
 
@@ -401,7 +401,7 @@ h3 {
 
   padding: 0;
 
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0 16px 32px rgb(0 0 0 / 15%));
 }
 
 /* Third section */
@@ -441,7 +441,7 @@ h3 {
   margin-right: auto;
   padding: 24px;
 
-  background-color: var(--Light);
+  background-color: var(--light);
 }
 
 .third-sect-card-title {
@@ -464,20 +464,20 @@ h3 {
 }
 
 .third-sect-link:hover {
-  background-color: var(--Primary);
+  background-color: var(--primary);
 }
 
 .third-sect-link:hover h2 {
-  color: var(--White);
+  color: var(--white);
 }
 
 .third-sect-numb {
-  margin: 0 0 40px 0;
+  margin: 0 0 40px;
 
   font-weight: normal;
 
   font-size: 64px;
-  font-family: 'Neucha', sans-serif;
+  font-family: '"Neucha', sans-serif;
   line-height: 1;
 }
 
@@ -528,7 +528,7 @@ h3 {
 
   padding-left: 55px;
 
-  background-color: var(--MainDark);
+  background-color: var(--main-dark);
 }
 
 .footer-col-1 {
@@ -536,9 +536,9 @@ h3 {
 }
 
 .footer-email {
-  margin: 0 0 9px 0;
+  margin: 0 0 9px;
 
-  font: 18px/1.6 'Open Sans', sans-serif;
+  font: 18px/1.6 "Open Sans", sans-serif;
 }
 
 .footer-form {
@@ -574,7 +574,7 @@ h3 {
 }
 
 .footer-input::placeholder {
-  opacity: 20%;
+  opacity: 0.2;
 }
 
 .footer-button {
@@ -588,7 +588,7 @@ h3 {
 
   border: none;
 
-  background-color: var(--Primary);
+  background-color: var(--primary);
   outline: none;
 }
 
@@ -604,14 +604,14 @@ h3 {
 }
 
 .footer-button:hover {
-  background-color: var(--PrimaryDark);
+  background-color: var(--primary-dark);
   cursor: pointer;
 }
 
 .footer-rules {
-  margin: 3px 0 3px;
+  margin: 3px 0;
 
-  font: 12px/1.6 'Open Sans', sans-serif;
+  font: 12px/1.6 "Open Sans", sans-serif;
 }
 
 .footer-link-1 {
@@ -629,5 +629,5 @@ h3 {
 }
 
 .footer-row-2 * {
-  font: 14px/1.6 'Open Sans', sans-serif;
+  font: 14px/1.6 "Open Sans", sans-serif;
 }
