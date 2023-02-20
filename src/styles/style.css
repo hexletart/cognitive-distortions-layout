@@ -554,10 +554,12 @@ h3 {
   width: 1px;
   height: 1px;
   padding: 0;
-  border: 0;
+
   overflow: hidden;
 
   white-space: nowrap;
+
+  border: 0;
 }
 
 .footer-input {
@@ -586,9 +588,10 @@ h3 {
 
   padding: 0;
 
+  background-color: var(--primary);
+
   border: none;
 
-  background-color: var(--primary);
   outline: none;
 }
 
