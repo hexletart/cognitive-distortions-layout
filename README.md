@@ -14,4 +14,4 @@ The project demonstrates a fairly simple page layout, introducing the user to co
 
 **Technology stack:**
 
-HTML, CSS, Surge, Git, GitHub, GitHub Actions (CI), Stylelint, Surge.
+HTML, CSS, Surge, Git, GitHub, GitHub Actions (CI), Stylelint.
