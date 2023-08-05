@@ -1,4 +1,4 @@
-Сognitive distortions
+Сognitive distortions :art:
 =======
 <!--
 ### Hexlet tests and linter status:
