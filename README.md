@@ -1,4 +1,4 @@
-Сognitive distortions :art:
+:art: Сognitive distortions
 =======
 <!--
 ### Hexlet tests and linter status:
@@ -7,13 +7,15 @@
 
 [<| Demonstration |>](http://layout-designer-project-lvl1-14032021.surge.sh/)
 
+---
 
 
-**Description:**
+##Description:
 
 The project demonstrates a fairly simple page layout, introducing the user to cognitive distortions in programming.
 
+---
 
-**Technology stack:**
+##Technology stack:
 
 HTML, CSS, Surge, Git, GitHub, GitHub Actions (CI), Stylelint.
