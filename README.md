@@ -1,9 +1,5 @@
 :art: Сognitive distortions
 =======
-<!--
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/hexletart/layout-designer-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/hexletart/layout-designer-project-lvl1/actions)
--->
 
 **[Demonstration](http://layout-designer-project-lvl1-14032021.surge.sh/)**
 
