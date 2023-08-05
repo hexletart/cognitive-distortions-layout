@@ -10,12 +10,12 @@
 ---
 
 
-##Description:
+## Description:
 
 The project demonstrates a fairly simple page layout, introducing the user to cognitive distortions in programming.
 
 ---
 
-##Technology stack:
+## Technology stack:
 
 HTML, CSS, Surge, Git, GitHub, GitHub Actions (CI), Stylelint.
